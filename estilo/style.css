@@ -8,72 +8,109 @@
     --cor1: #284899;
     --cor2: #759CFF;
     --cor3: #527CE6;
-    --cor4: #997418;
+    --cor4: #ce9d21;
     --cor5: #E6BB53;
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Bebas Neue', sans-serif;
     --fonte3: 'Didact Gothic', sans-serif;
 }
-*{
-    padding: 0px;
+
+* {
     margin: 0px;
-}
-html, body{
-    min-height: 100vh;
-    max-width: 98vw;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-header{
+body {
+    font-size: 100%;
+    margin: auto;
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+}
+
+.guias {
+    display: flex;
+    gap: 40px;
+    font-family:var(--fonte2);
+    font-size: 30px;
+    color: var(--cor4);
+}
+
+.menu {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.menu:hover {
     background-color: var(--cor5);
+    color: white;
+    transition: 0.5s;
 }
 
-header img{
-    padding: 20px;
+.imagem-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-header.menu{
-    justify-content: right;
+.titulo {
+    background-color: var(--cor1);
+    color: white;
+    padding: 7px;
+    font: normal 300 26px var(--fonte2);
+    font-variant: small-caps;
+    text-shadow: 2px 3px 5px black;
 }
 
-main{
+.conteudo, .lista {
+    min-width: 98vw;
+    margin: auto;
+    justify-content: center;
+    font: normal 400 20px var(--fonte3);
+    padding: 40px 30px;
+    line-height: 30px;
+    background-image: linear-gradient(to right, var(--cor3),#ffffff);
+}
+
+.tabela {
+    width: 98vw;
+    margin: auto;
+    padding: 30px;
+    font-size: 20px;
     font-family: var(--fonte3);
 }
 
-main img{
-    margin-top: 50px;
+.tabela-curso {
+    width: 500px;
 }
 
-a{
-    color: var(--cor4);
-    border-radius: 5px;
-    font-size: 20px;
+.corpo-tabela {
+    background-image: linear-gradient(to right, var(--cor3),#ffffff);
 }
 
-div#cabeçalho > a{
-    text-align: right;
-
-}
-
-h1, h2, h3, a {
-    font-family: var(--fonte2);
-}
-
-table{
-    max-width: 95vw;
-    padding: 1vw;
+td{
     border: 1px solid black;
-    font-size: 1.4em;
-}
-
-th{
+    text-align: center;
+    padding: 5px;
     width: 300px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.521);
+
 }
 
-tbody>tr{
-    border: 1px solid black;
-}
-
-footer{
-    background-color: black;
-    color: white;
+.rodapé {
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor4), var(--cor5));
+    font-size: 22px;
+    font-family: var(--fonte2);
 }
