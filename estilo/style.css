@@ -41,12 +41,12 @@ body {
     gap: 40px;
     font-family:var(--fonte2);
     font-size: 30px;
-    color: var(--cor4);
 }
 
 .menu {
     padding: 10px;
     border-radius: 15px;
+    color: var(--cor4);
 }
 
 .menu:hover {
@@ -65,8 +65,8 @@ body {
 .titulo {
     background-color: var(--cor1);
     color: white;
-    padding: 7px;
-    font: normal 300 26px var(--fonte2);
+    padding: 7px 7px 7px 27px;
+    font: normal 300 2.2em var(--fonte2);
     font-variant: small-caps;
     text-shadow: 2px 3px 5px black;
 }
@@ -103,8 +103,66 @@ td{
     padding: 5px;
     width: 300px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.521);
-
 }
+
+fieldset{
+    border: 0;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid var(--cor1);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+.botão {
+    font-size: 2em;
+    background: var(--cor1);
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botão:hover {
+    background-color: var(--cor5);
+    color: white;
+}
+
 
 .rodapé {
     padding: 15px;

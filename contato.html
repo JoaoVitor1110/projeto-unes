@@ -17,30 +17,30 @@
               <a class="menu" href="#" target="_self">Contato</a>
           </nav>
     </header>
-    <main>
+    <main class="formulario">
         <h1 class="titulo">Entre em Contato</h1>
         <p>Se interessou por algum curso? Entre em contato conosco que nosso time de atendimento terá o maior prazer em te atender!</p>
         <hr>
         <form>
-            <fieldset>
+            <fieldset class="grupov ">
                 <div>
-                    <label>Nome</label>
-                    <input type="text" name="nome" id="nome">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
-                <div>
-                    <label>Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
             </fieldset>
 
-            <div>
-                <label>Email</label>
-                <input type="e-mail" name="email" id="email">
+            <div for="email">
+                <label class="campo"><strong>Email</strong></label>
+                <input type="e-mail" name="email" id="email" required>
             </div>
 
             <div>
-                <label>Qual curso se interessou?</label>
+                <label for="curso"><strong>Qual curso se interessou?</strong></label>
                 <select id="cursos">
                     <option selected disabled value="">Selecione</option>
                     <option>Análise e Desenvolvimento de Sistemas</option>
@@ -51,13 +51,13 @@
                 </select>
             </div>
 
-            <div>
+            <div class="campo">
                 <br>
-                <label>Diga-nos um pouco sobre você e como podemos te ajudar!</label>
+                <label for="assunto"><strong>Diga-nos um pouco sobre você e como podemos te ajudar!</strong></label>
                 <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
             </div>
 
-            <button type="submit">Concluido</button>
+            <button type="submit" class="botão">Concluido</button>
         </form>
     </main>
     <footer class="rodapé">
