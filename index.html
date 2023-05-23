@@ -6,20 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo(a) a UNES</title>
     <link rel="shortcut icon" href="/imagens/favicon_1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
     <body>
-        <header class="cabeçalho">
-            <img class="logo" src="imagens/logo.png" alt="Logo">
-                <nav class="guias">
-                    <a class="menu" href="#" target="_self">Home</a>
-                    <a class="menu" href="quem-somos.html" target="_self">Quem Somos</a>
-                    <a class="menu" href="contato.html" target="_self">Contato</a>
-                </nav>
+        <header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                    <img src="imagens/logo.png" width="112" height="28">
+                  </a>
+                  </div>
+            
+                  <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
+                </div>
+            
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a class="navbar-item">
+                      Home
+                    </a>
+            
+                    <a class="navbar-item">
+                      Cursos
+                    </a>
+                    <a class="navbar-item">
+                      Suporte
+                    </a>
+                  </div>
+            
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-primary">
+                          <strong>Cadastre-se</strong>
+                        </a>
+                        <a class="button is-light">
+                          Já sou aluno
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
+        
         <main>
-            <div><img class="imagem-home" src="imagens/capa.png" alt="Imagem Introdutória"></div>
-            <section>
+            <section class="section">
+                <div class="columns">
+                 <div class="column is-6">
+                    <div class="card">
+                        <div class="card-image ">
+                          <figure class="image is-4by2">
+                            <img src="imagens/capa1.jpg" alt="capa">
+                          </figure>
+                        </div>
+                      </div>
+                 </div>
+                 <article class="message">
+                    <div class="message-header">
+                      <p>Sobre a Faculdade</p>
+                    </div>
+                    <div class="message-body is-size-5">
+                        A UNES é uma instituição de ensino dedicada ao campo do Design e da Programação. Nossa faculdade oferece uma variedade de cursos, com destaque para a graduação em <strong>Análise e Desenvolvimento de Sistemas</strong> e <strong>Design Gráfico</strong>. <br>
+                        Embora sejamos uma faculdade relativamente nova no mercado, estamos comprometidos em fornecer uma educação de alta qualidade aos nossos alunos. Contamos com um corpo docente capacitado e renomado, como os professores Ethan Ramirez e Sophia Chen, que trazem consigo vasta experiência e conhecimento em suas respectivas áreas de atuação.
+                    </div>
+                  </article>
+                </div>     
+            </section>        
                 <h1 class="titulo">Sobre a Universidade</h1>
                 <p class="conteudo">A UNES é uma instituição de ensino dedicada ao campo do Design e da Programação. Nossa faculdade oferece uma variedade de cursos, com destaque para a graduação em <strong>Análise e Desenvolvimento de Sistemas</strong> e <strong>Design Gráfico</strong>. <br>
                 Embora sejamos uma faculdade relativamente nova no mercado, estamos comprometidos em fornecer uma educação de alta qualidade aos nossos alunos. Contamos com um corpo docente capacitado e renomado, como os professores Ethan Ramirez e Sophia Chen, que trazem consigo vasta experiência e conhecimento em suas respectivas áreas de atuação.<br>
@@ -31,7 +88,6 @@
                 Na UNES, acreditamos que a combinação de conhecimento teórico e prático é fundamental para a formação de profissionais competentes. Portanto, nossos cursos oferecem uma abordagem equilibrada, com ênfase na aplicação prática dos conhecimentos adquiridos.<br>
             
                 Estamos ansiosos para receber estudantes apaixonados por Design e Programação em nossa faculdade, e estamos comprometidos em proporcionar uma experiência educacional enriquecedora e preparatória para uma carreira de sucesso.</p>
-            </section>
         </main>
         <footer class="rodapé">
             <p><em>Site feito por</em> <a href="https://www.linkedin.com/in/jvs-alves/" target="_blank"><em>João Vitor</em></a></p>
